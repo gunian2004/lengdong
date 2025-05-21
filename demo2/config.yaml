@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  mode: debug  # debug, release, test
+  log_level: debug
+  allow_origin: "*"
+
+database:
+  driver: mysql
+  host: localhost
+  port: 3306
+  user: root
+  password: 123456
+  name: lengdong
+  max_open_conns: 100
+  max_idle_conns: 10
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+
+jwt:
+  secret: "lnx1Auv6z4eJRs87WYnplyK3qOhmTDEP"
+  expire_time: 24  # in hours
+
+blockchain:
+  network_config_path: "./blockchain/network/config.yaml"
+  channel_id: "coldchain-channel"
+  chaincode_name: "coldchain-cc"
+  org_admin: "Admin"
+  org_name: "Org1MSP" 

@@ -1,0 +1,30 @@
+# 数据库配置
+database:
+  host: "localhost"
+  port: 3306
+  user: "root"
+  password: "123456"
+  name: "reval_system"
+  max_idle_conns: 100
+  max_open_conns: 10
+  conn_max_lifetime: 300 # 单位为秒
+server:
+  port: 8080
+# 服务器配置
+
+
+# 进货配置
+purchase:
+  valid_buyer_roles:
+    factory: true
+    distributor: true
+  valid_seller_roles:
+    factory: true
+    distributor: true
+
+# 物流配置
+logistics:
+  min_temp: -20
+  max_temp: 10
+  min_humidity: 0
+  max_humidity: 100
